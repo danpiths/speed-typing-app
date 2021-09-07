@@ -78,7 +78,7 @@ textarea:disabled::placeholder {
 @media (min-width: 850px) {
   h1 {
     font-size: 2.75rem;
-    margin: 1em 0;
+    margin: 0.7em 0;
   }
 
   textarea {
