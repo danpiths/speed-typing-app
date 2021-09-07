@@ -36,6 +36,7 @@ function useWordGame(startingTime = 10) {
       setIsTimeRunning(false);
       setWordCount(countWords(text));
     }
+    // eslint-disable-next-line
   }, [time, isTimeRunning]);
 
   return {
