@@ -30,6 +30,7 @@ textarea {
   padding: 1em;
   outline: none;
   line-height: 1.6;
+  border: none;
 }
 
 textarea::placeholder {
