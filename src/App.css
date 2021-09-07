@@ -1,38 +1,94 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  color: white;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin: 0.7em 0;
+  color: #00b800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea {
+  height: 50vh;
+  background: #00b800;
+  width: 90%;
+  max-width: 900px;
   color: white;
+  font-family: inherit;
+  padding: 1em;
+  outline: none;
+  line-height: 1.6;
 }
 
-.App-link {
-  color: #61dafb;
+textarea::placeholder {
+  color: #007000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#time,
+#word-count {
+  margin: 1.5em 0;
+  font-size: 1.1rem;
+}
+
+button {
+  border: none;
+  font-size: 0.9rem;
+  font-family: inherit;
+  padding: 1.2em 4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #00b800;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  background: white;
+  color: #00b800;
+}
+
+textarea:disabled,
+button:disabled {
+  cursor: not-allowed;
+  background: #888;
+}
+
+button:disabled {
+  color: #646464;
+}
+
+textarea:disabled::placeholder {
+  color: #646464;
+}
+
+@media (min-width: 850px) {
+  h1 {
+    font-size: 2.75rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  textarea {
+    font-size: 1.1rem;
+  }
+
+  #time,
+  #word-count {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1.2rem;
   }
 }
